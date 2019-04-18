@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lootSheet name="The Tragedy of Sun Dra">
+    <!--
+        Legend
+
+            name-What the item is called.
+            description - a description of the item
+            shares - a roll of the given value gets the corresponding budget when drawing from the loot pile
+            quantity - the number of times an item can be drawn (item duplicates)
+            requires - a roll must meet the given value for a chance to draw it. If a player meets the req, they get a 50% chance to draw the item.
+            guaranteed - a roll of the given value guarantees the item will be drawn.
+            limit - how many times an item can be drawn per loot
+            cost - How much an item costs
+
+    -->
+    <dungeon name="Tunnels of the Hidden Kingdom">
+        <room name="Fallen Travelers">
+            <package name="Adult Corpse" shares="1-10=1,11-15=4,16-20=8,21+=13">
+                <item cost="4" name="Platinum Pocket Watch" description="A peculiar, round object with a single dial and the numbers
+                1-12 circled around the outer edge. The the number 12 sits at the top with the number 6 opposite of it.
+                A compass is soldered to the upper left corner." DMnotes="Gives player keen senses feat." requires="13+" />
+                <item cost="2" name="Note" description="A note pinned with a broach designed to resemble an anatomically accurate heart. The note reads: Dear Charlie, I hope you two find the light and remember me always. Your love, Marry"/>
+                <item cost="2" name="Broadsword" description="A typical broadsword."/>
+                <item cost="2" name="Sunset's Signet Ring" description="A beautiful ring with the name
+                'Charlie Sunset II' inscribed on the band. What appears to be a family crest is chiseled into the
+                 face of the ring." guaranteed="15+"/>
+                <item cost="1" name="Copper" description="1d4 cp" quantity="2"/>
+                <item cost="1" name="Gold Necklace" description="A gold chained necklace."/>
+                <item cost="1" name="Red Scarf" description="A tattered red scarf."/>
+            </package>
+            <package name="Young Corpse" shares="1-10=1,11-15=6,16-20=8,21+=18">
+                <item cost="2" name="Sunset's Signet Ring" description="A beautiful ring with what appears to be a
+                family crest chiseled into the face of the ring." guaranteed="15+"/>
+                <item cost="2" name="Leg Brace" description="A leg brace designed from a combination of leather and metal."/>
+                <item cost="2" name="Giraffe Minuet" description="A wooden minuet of a giraffe."/>
+                <item cost="1" name="Sweets" description="Some spoiled sweets." quantity="3"/>
+                <item cost="1" name="Pebbles" description="Some pebbles." quantity="3"/>
+                <item cost="2" name="Bronze Apple" description="A bronze compass designed to resemble a hemisphere of an apple. Strangely, it doesn't point north."/>
+                <item cost="1" name="Small Red Scarf" description="A small, red, tattered scarf."/>
+            </package>
+            <package name="Rucksack" shares="1-10=2,11-15=4,16-20=6,21+=10">
+                <item cost="3" name="Sun Dra's Record" description="The original historical recording of Magna Culmine's encounter
+                    with Sun Dra." guaranteed="20+" requires="20+"/>
+                <item cost="2" name="Food Bag" description="A bag containing 7 unspoiled biscuits."
+                      DMnotes="The bag is enchanted. Food contained in it can never spoil."/>
+                <item cost="1" name="Gold" description="2d12 gp"/>
+                <item cost="1" name="Silver" description="2d6 sp."/>
+                <item cost="1" name="Copper" description="4d4 cp."/>
+                <item cost="2" name="Platinum" description="2d4 pp."/>
+                <item cost="3" name="Bronze Apple" description="A bronze compass designed to resemble a hemisphere of an apple. Strangely, it doesn't point north."/>
+                <item cost="1" name="Glowing Mushroom" description="A luminescent, green mushroom." quantity="7"/>
+
+            </package>
+        </room>
+    </dungeon>
+    <dungeon name="Sun Dra's Tomb">
+        <room name="Gabriel's Claims">
+            <package name="Crypt Bones" shares="1-5=2,6-10=5,11-15=12,16-19=18,20-22=24,23+=30">
+                <item cost="1" name="Elvish Skull"  description="The skull of an ancient elf." quantity="100"/>
+                <item cost="1" name="Elvish Arm Bones" description="The arms of an ancient elf." quantity="200"/>
+                <item cost="1" name="Elvish Leg Bones" description="The legs of an ancient elf." quantity="200"/>
+                <item cost="1" name="Various Bones" description="The bones of an ancient elf." quantity="1000"/>
+                <item cost="1" name="Hair Brush" description="An old wooden hair brush." />
+                <item cost="1" name="Sock" description="A single black cotton sock." quantity="2"/>
+                <item cost="1" name="Bow Tie" description="An old raggedy bow tie." />
+                <item cost="1" name="Gold Tooth" description="A small golden tooth." quantity="3"/>
+                <item cost="1" name="Cloth Scrap" description="An unidentifiable scrap of what was most likely clothing." quantity="20"/>
+                <item cost="1" name="Nothing" description="Unluckily, you found noting." quantity="100"/>
+            </package>
+        </room>
+        <room name="Sun Dra's Mural">
+            <package name="Gift Piles" shares="1-5=1,6-10=3,11-15=7,16-20=10,21+=15">
+                <item cost="1" name="White Candle" description="A candle that has been lit for who knows how long, yet the wick never burns and the wax never melts."
+                      quantity="20"/>
+                <bundle cost="1" >
+                    <item cost="1" name="One Thing"/>
+                </bundle>
+            </package>
+        </room>
+        <room name="Sun Dra's Tomb">
+            <package name="Offerings" shares="1-5=1,6-10=3,11-15=7,16-19=10,20-22=15,23+=19">
+                <item cost="1" name="Gold" description="1d12 gp" quantity="5"/>
+                <item cost="1" name="Gold" description="4d6 gp" quantity="3" requires="12+"/>
+                <item cost="1" name="Blue Candle" description="A candle that has been lit for who knows how long, yet the wick never burns and the wax never melts."
+                      quantity="20"/>
+                <item cost="1" name="Surrendered Possession" description="A bouquet of flowers that have not wilted even a smidgen."
+                    DMnotes="The flowers provide a sense of comfort. Player carrying the flowers can choose to heal 5 hp once per rest."/>
+                <item cost="2" name="Surrendered Possession" description="A child's minuet of a horse."
+                    DMnotes="The minuet has a calming aura. When given to a child, the child is guaranteed to be content and calm."/>
+                <item cost="3" name="Surrendered Possession" description="A doll with red hair and traditional garb."/>
+                <item cost="3" name="Surrendered Possession" description="A dagger inscribed with the name 'Gibbons' on the blade. Somehow, it has not rusted." requires="10+"
+                    DMnotes="Extends the wielders crit range by 1. ie if player crits on 19 or 20, player now crits on 18 or higher when
+                    attacking with Gibbons' blade."/>
+                <item cost="5" name="Surrendered Possession" description="A red coin purse embroidered with purple lining."
+                    DMnotes="Once per day, if the coin purse is empty and the player wills it, the coin purse will spawn 1d4 gp."/>
+                <item cost="5" name="Surrendered Possession" description="A set of 5 minuets resembling soldiers from an ancient time."/>
+                <item cost="4" name="Surrendered Possession" description="A diamond wedding ring in perfect condition." requires="15+" />
+                <item cost="12" name="Surrendered Possession" description="A peculiar, round object with a single dial and the numbers
+                1-12 circled around the outer edge. The the number 12 sits at the top with the number 6 opposite of it.
+                A compass is soldered to the upper left corner." DMnotes="Gives player keen senses feat." requires="20+" />
+                <item cost="1" name="Surrendered Possession" description="An un-withered corpse of a slain, young lamb."/>
+                <item cost="7" name="Surrendered Possession" description="A fine set of Dragon Chess with a marvel board and detailed pieces."
+                    requires="10+" DMnotes="The owner of the board gets advantage in Dragon Chess when using this set."/>
+                <item cost="4" name="Paladin's Torch" description="A wooden torch with intricate metal work."
+                    DMnotes="When wielded by a paladin with good alignment, the torch can be lit or extinguished at will."
+                    quantity="4"/>
+                <item cost="3" name="Surrendered Possession" description="A gold pendant with a Blue Jay perched on a bouquet of azaleas."/>
+                <item cost="3" name="Surrendered Possession" description="A gold chained necklace finished with a ruby stone."/>
+                <item cost="6" name="Surrendered Possession" description="A wooden Shortsword for child's play with a red ribbon tied
+                    around the handle at the hilt. Dents scattered across the wooden blade tell stories of hundreds of pretend wars."
+                    DMnotes="Reuben in Manga Culmine misses the sword and will trade it for his expertly hand crafted claymore."/>
+                <item cost="5" name="Surrendered Possession" description="A wooden Shortsword for child's play with a green ribbon tied
+                    around the handle at the hilt. Dents scattered across the wooden blade tell stories of hundreds of pretend wars."
+                      DMnotes="Ezmerelda in Manga Culmine misses the sword and will trade it for her expertly hand crafted longsword."/>
+                <item cost="6" name="Surrendered Possession" description="An elegant walking staff made from birch wood and with a detailed
+                    castle carved at the top. The name 'Charlie Sunset III' is inscribed."/>
+                <item cost="5" name="Surrendered Possession" description="A leather pouch containing a collection of boring and indistinguishable rocks."/>
+                <item cost="10" name="Surrendered Possession" description="A beautiful decanter made entirely from diamond." requires="20+" />
+                <item cost="7" name="Surrendered Possession" description="A tasteful painting of a nude woman sprawled across a thrown, red fabric."
+                    DMnotes="The painting possesses a haunting beauty. The player can offer it in exchange for any one item. If it is exactly one item,
+                    the NPC is compelled to accept no matter the trade. If a trade is offered for more than one item, the spell is
+                    permanently nullified for that NPC. However, thieves are also drawn to it and will not trade, but fight to the
+                    death to obtain it if they fail a constitution save."/>
+                <item cost="4" name="Surrendered Possession" description="A crystal chalice with a jeweled bracelet wrapped around the base."/>
+                <item cost="4" name="Surrendered Possession" description="Two matching gold ear rings."/>
+                <item cost="4" name="Surrendered Possession" description="A golden hair clip with dyed metals that resemble a white flower."/>
+                <item cost="9" name="Surrendered Possession" description="A small wolf spider trapped in a glass jar poked with air holes. Somehow the spider lives despite having no source of food."
+                    DMnotes="The Spider's name is Bahrias. Bahrias speaks Beast and Celestial telepathically. Player can use Bahrias as a spy."/>
+                <item cost="4" name="Surrendered Possession" description="A gold plated wanderer's telescope. Zooms 5x"/>
+                <item cost="5" name="Surrendered Possession" description="An iron helmet laid to rest in the tomb, yet somehow has not rusted."/>
+                <item cost="6" name="Surrendered Possession" description="A quill made from an eagle's feather and bound to a stack of short stories"
+                    DMnotes="Upon reading, the stories are deeply fascinating and though provoking. If read by a player with 13 Intelligence or higher,
+                    the player will gain a permanent +1 to wisdom (for max of 20)."/>
+            </package>
+            <package name="Altar" shares="1-5=1,6-10=2,11-15=4,16-19=8,20+=12">
+                <item cost="1" name="Blue Candle" description="A candle that has been lit for who knows how long, yet the wick never burns and the wax never melts."
+                      quantity="8"/>
+                <item cost="2" name="Note" description="Deeply Sorry"/>
+                <item cost="2" name="Note" description="I am so sorry" />
+                <item cost="2" name="Note" description="Twas not your purpose" />
+                <item cost="2" name="Note" description="I realize now, that I should have laid my arms." />
+                <item cost="4" name="Note" description="May Anura find you in Heaven" />
+                <item cost="2" name="Note" description="Rest in peace" />
+                <item cost="2" name="Note" description="Here lies the giant, Sun Dra.\n\tIn his days, he did meet my daughter in secret,
+                    or, more truthfully, she did meet him. Though they seem to me now, to have fallen deeply in love,
+                    their amity was unrecognized and distracted from by my own love for her. In the days following
+                    the tragedy, we found we have erred gravely. Now with much pain and resentment, we lay to rest Sun Dra,
+                    the God Child.\n\n\tSinged with great remorse,\n\t\tThe Good King, Aaron of Magna Culmine" guaranteed="15+"/>
+                <item cost="6" name="Large Severed Heart" description="A very large heart; too large to be human. The heart's veins
+                    appear torn and suggest the heart was removed in a barbaric manner. But wait... it still throbs?"
+                    guaranteed="1+"/>
+                <item cost="5" name="Surrendered Sword" description="A set of 17 Longswords that were abandoned to rest in the tomb.
+                    Somehow, they have not rusted."
+                    requires="10+"/>
+                <item cost="5" name="Surrendered Pike" description="A set of 3 Pikes that were abandoned to rest in the tomb. Somehow,
+                    they have not rusted."/>
+                <item cost="3" name="Bloodied Dress" description="An elegant, blue, princess styled dress. It is arguably the most beautiful
+                    dress ever crafted, aside from the creases in the fabric and the abundance of crimson red stains."
+                    DMnotes="If the dress is worn by a female with blonde hair and standing 5.0 to 5.4 feet tall, The Pitty of
+                    Sun Dra will recognize a resemblance to Anura and harbor a protective affection for her. However, seeing
+                    the bloodied dress makes Sun Dra emotional and unpredictable."
+                    guaranteed="17+"/>
+            </package>
+
+        </room>
+        <room name="Gabriel's Shrine">
+            <package name="Gabriel's Shrine" shares="1-5=5,6-10=6,11-15=9,16-19=12,20+=15">
+                <item cost="1" name="Blue Candle" description="A candle that has been lit for who knows how long, yet the wick never burns and the wax never melts."
+                      quantity="10"/>
+                <item cost="1" name="Red Candle" description="A candle that has been lit for who knows how long, yet the wick never burns and the wax never melts."
+                      quantity="10"/>
+                <item cost="1" name="Violet Candle" description="A candle that has been lit for who knows how long, yet the wick never burns and the wax never melts."
+                      quantity="10"/>
+                <item cost="1" name="Green Candle" description="A candle that has been lit for who knows how long, yet the wick never burns and the wax never melts."
+                      quantity="5"/>
+                <item cost="1" name="White Candle" description="A candle that has been lit for who knows how long, yet the wick never burns and the wax never melts."
+                      quantity="8"/>
+                <item cost="4" name="Paladin's Torch" description="A wooden torch with intricate metal work."
+                      DMnotes="When wielded by a paladin with good alignment, the torch can be lit or extinguished at will."
+                      quantity="8"/>
+                <item cost="4" name="Gold" description="1d20 of gp." quantity="10"/>
+                <item cost="2" name="Silver" description="1d12 of sp." quantity="15"/>
+                <item cost="2" name="Copper" description="3d4 of cp." quantity="20"/>
+                <item cost="3" name="Golden Chalice" description="A decorative, golden chalice." quantity="4"/>
+                <item cost="2" name="Small Wooden Box" description="A small wooden box containing 2d6 gp." quantity="3"/>
+                <item cost="3" name="Signet Plaque" description="A gold plaque with the symbol of Gabriel engraved"
+                    guaranteed="14+"/>
+            </package>
+        </room>
+        <room name="The Grand Hall">
+            <package name="The Grand Hall" shares="1-10=0,11-17=6,18+=8">
+                <item cost="4" name="Paladin's Torch" description="A wooden torch with intricate metal work."
+                      DMnotes="When wielded by a paladin with good alignment, the torch can be lit or extinguished at will."
+                      quantity="8"/>
+                <item cost="4" name="Bench" description="A cozy purple bench with 2 small red pillows." quantity="4"
+                      DMnotes="When the player rests on a red pillow, they player can use 1d4 hit dice upon waking."/>
+                <item cost="1" name="Rat Bones" description="The bones of a dead rat." quantity="4"/>
+                <item cost="4" name="Giant Rat Bones" description="The Bones of a giant rat." requires="16+"
+                    guaranteed="18+"/>
+                <item cost="4" name="Wall Mirror" description="A large, clear mirror hanging on the wall." quantity="3"/>
+                <item cost="8" name="Table" description="An elegant wooden table with various stone animal figurines spread across it.
+                    An elephant, a tiger, a wolf, and an eagle."/>
+                <item cost="2" name="Nothing" description="You were unlucky and found nothing" quantity="20"/>
+            </package>
+
+        </room>
+    </dungeon>
+    <dungeon name="mobs">
+        <room name="Legionaries">
+            <package name="Gabriel's Legionary (Grunt)" shares="1-10=1,11-15=2,16+=3">
+                <item cost="1" name="Legionary Longsword" description="A longsword with a decorative golden hilt. A fine chain made of silver
+                    is wrapped around the handle." guaranteed="3+"/>
+                <item cost="1" name="Nothing" description="Nothing was found." quantity="20"/>
+                <item cost="1" name="Locust Broach" description="A broach decorated to resemble a locust." requires="13+"/>
+            </package>
+            <package name="Gabriel's Legionary (Archer)" shares="1-10=1,11-15=2,16+=3">
+                <item cost="1" name="Legionary Recurve Longbow" description="A recurve longbow with a fine silver chain wrapped around
+                    the handle. Gold embroidery traces the bow's arms." guaranteed="3+"/>
+                <item cost="1" name="Nothing" description="Nothing was found." quantity="20"/>
+                <item cost="1" name="Locust Broach" description="A broach decorated to resemble a locust." requires="13+"/>
+            </package>
+            <package name="Gabriel's Legionary (Officer)" shares="1-10=1,11-15=2,16+=3">
+                <item cost="1" name="Legionary Longsword" description="A longsword with a decorative golden hilt. A fine chain made of silver
+                    is wrapped around the handle." guaranteed="3+"/>
+                <item cost="1" name="Nothing" description="Nothing was found." quantity="20"/>
+                <item cost="1" name="Legionary Dagger" description="A gold hilted dagger with light blue leather around the handle"
+                      requires="13+"/>
+                <item cost="1" name="Bronze Apple" description="A bronze compass designed to resemble a hemisphere of an apple. Strangely, it doesn't point north."/>
+                <item cost="1" name="Beetle Broach" description="A broach decorated to resemble a black beetle." requires="13+"/>
+            </package>
+            <package name="Gabriel's Legionary (Captain)" shares="1-10=1,11-15=3,16+=5">
+                <item cost="1" name="Legionary Captain Longsword" description="A longsword with a decorative golden hilt. A fine chain made of platinum
+                    is wrapped around the handle. The blade itself is made from some platinum-obsidian hybrid." guaranteed="3+"/>
+                <item cost="1" name="Nothing" description="Nothing was found." quantity="20"/>
+                <item cost="1" name="Legionary Dagger" description="A gold hilted dagger with light blue leather around the handle"
+                      requires="13+"/>
+                <item cost="1" name="Bronze Apple" description="A bronze compass designed to resemble a hemisphere of an apple. Strangely, it doesn't point north."/>
+                <item cost="1" name="White Shoulder Cape" description="A white garb designed to flow over and behind the shoulder."
+                    guaranteed="6+"/>
+                <item cost="1" name="Captain's Signet Ring" description="A ring with the symbol of Gabriel"
+                    guaranteed="6+"/>
+                <item cost="1" name="Owl Broach" description="A broach decorated to resemble a white owl." guaranteed="13+"/>
+            </package>
+        </room>
+    </dungeon>
+    <!--
+            <item cost="" name="" description="" quantity=""/>
+    -->
+</lootSheet>
